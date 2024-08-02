@@ -11,7 +11,7 @@ services:
       # https://docs.webhook.site/
       - WHATSAPP_HOOK_URL=https://webhook.site/11111111-1111-1111-1111-11111111
       - WHATSAPP_HOOK_EVENTS=message
-      - WHATSAPP_DEFAULT_ENGINE=WEBJS
+      - WHATSAPP_DEFAULT_ENGINE=NOWEB
     restart: always
 
   waha-plus:
@@ -29,7 +29,7 @@ services:
       # - WHATSAPP_HOOK_URL=https://webhook.site/11111111-1111-1111-1111-11111111
       # - WHATSAPP_HOOK_EVENTS=message
       # - WHATSAPP_API_HOSTNAME=localhost
-      - WHATSAPP_DEFAULT_ENGINE=WEBJS
+      - WHATSAPP_DEFAULT_ENGINE=NOWEB
       - WHATSAPP_API_KEY=321
       # Username and password for Swagger
       - WHATSAPP_SWAGGER_USERNAME=swagger
@@ -63,7 +63,7 @@ services:
       # - WAHA_DASHBOARD_USERNAME=admin
       # - WAHA_DASHBOARD_PASSWORD=123
       # - WHATSAPP_API_HOSTNAME=localhost
-      - WHATSAPP_DEFAULT_ENGINE=WEBJS
+      - WHATSAPP_DEFAULT_ENGINE=NOWEB
       - WHATSAPP_SESSIONS_MONGO_URL=mongodb://mongodb:27017
     restart: always
 
