@@ -15,7 +15,7 @@ services:
     #
     # Image
     #
-    image: devlikeapro/waha-plus:latest # or devlikeapro/waha:latest if you're using WAHA Core
+    image: devlikeapro/waha-plus:noweb # or devlikeapro/waha:latest if you're using WAHA Core
     #
     # We strongly recommend using the pinned version of WAHA
     # https://waha.devlike.pro/docs/how-to/engines/#versions
@@ -97,9 +97,9 @@ services:
       #
       # Choose the right engine for your needs (WEBJS by default)
       # https://waha.devlike.pro/docs/how-to/engines/
-      - WHATSAPP_DEFAULT_ENGINE=WEBJS
+      #- WHATSAPP_DEFAULT_ENGINE=WEBJS
       # Use NOWEB engine for the fastest performance
-      #- WHATSAPP_DEFAULT_ENGINE=NOWEB
+      - WHATSAPP_DEFAULT_ENGINE=NOWEB
 
       #
       # Sessions
